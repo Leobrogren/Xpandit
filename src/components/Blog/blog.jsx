@@ -15,12 +15,10 @@ function Blog() {
             idé (eller inte)?
           </h3>
           <div className="flex">
-            <button
-              className="rounded-[32px] bg-[#1E1E1E] w-[188px] h-[46px] text-[white] font-light text-[20px]"
-              onClick={() => setOpen(true)}
-            >
-              Starta projekt
-            </button>
+          <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow"  onClick={() => setOpen(true)}>
+    <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+    <span class="relative text-black group-hover:text-white">Starta projekt</span>
+  </button>
           </div>
         </div>
       </div>

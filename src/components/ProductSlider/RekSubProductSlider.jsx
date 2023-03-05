@@ -1,7 +1,4 @@
 import { useState } from "react";
-import picture1 from "./../../assets/images/dashboard/picture1.png";
-import picture2 from "./../../assets/images/dashboard/picture2.png";
-import picture3 from "./../../assets/images/dashboard/picture3.png";
 import VideoQuickView from "../QuickView/VideoQuickView";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";

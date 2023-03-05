@@ -1,7 +1,8 @@
 import facebook from "./../../assets/images/footer/facebook.png";
 import linkdin from "./../../assets/images/footer/linkdin.png";
 import instagram from "./../../assets/images/footer/instagram.png";
-
+import { faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Blog from "./../Blog/blog";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -17,25 +18,12 @@ function Footer() {
       <footer className="flex flex-col w-full 2lg:hidden" id="footer">
         <Blog />
         <div className="w-full flex justify-center py-8 bg-white">
-          <div className="w-[85%] flex justify-between">
+          <div className="w-[85%] content-center flex justify-between">
             <div className="flex gap-8">
-              <img
-                className="h-5 w-auto"
-                src={instagram}
-                alt="payment method visa"
-              />
+            <FontAwesomeIcon className="h-6 w-auto" icon={faLinkedin} />
+            <FontAwesomeIcon className="h-6 w-auto" icon={faInstagram} />
+            <FontAwesomeIcon className="h-6 w-auto" icon={faFacebook} />
 
-              <img
-                className="h-5 w-auto"
-                src={linkdin}
-                alt="payment method mastercard"
-              />
-
-              <img
-                className="h-5 w-auto"
-                src={facebook}
-                alt="payment method klarna"
-              />
             </div>
 
             <div className="flex flex-row gap-6 ">
@@ -68,26 +56,26 @@ function Footer() {
       <footer className="hidden 2lg:flex flex-col w-full">
         <div className="bg-white py-8 w-full flex justify-center">
           <div className="w-[85%] flex justify-between">
-            <div className="flex gap-12">
+            <div className="flex  gap-12">
               <img
                 className="h-5 w-auto"
                 src={instagram}
-                alt="payment method visa"
+                href="www.test.se"
+                alt="Follow us on instagram"
               />
 
               <img
                 className="h-5 w-auto"
                 src={linkdin}
-                alt="payment method mastercard"
+                alt="Follow us on linkedin"
               />
 
               <img
                 className="h-5 w-auto"
                 src={facebook}
-                alt="payment method klarna"
+                alt="Follow us on facebook"
               />
             </div>
-
             <div>
               <p>Reklamfilm</p>
               <p>Eventfilm</p>

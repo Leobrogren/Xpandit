@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./../../index.css";
 
-import Logo from './../../assets/images/Logo.png';
+import Logo from './../../assets/images/logo.png';
 
 function Header() {
   const navRef = useRef(null);
@@ -20,7 +20,7 @@ function Header() {
         ref={navRef}
       >
         <div className="flex justify-between items-center py-7 w-[85%]">
-          <div className="flex gap-8 items-center">
+          <div className="flex w-52 gap-8 items-center">
             <Link to="/">
               <img src={Logo} />
             </Link>

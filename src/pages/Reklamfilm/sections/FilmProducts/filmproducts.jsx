@@ -33,7 +33,7 @@ function FilmProducts() {
       <div className="w-full h-screen flex flex-col">
         <div className="flex w-full h-[50%] grid grid-cols-3">
           <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative"
+            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
             style={{ backgroundImage: `url(${Film1})` }}
             onMouseOver={() => {
               setflag1(true);
@@ -45,17 +45,15 @@ function FilmProducts() {
             {flag1 === false ? (
               <img className="absolute inset-0 m-auto" src={Film1Logo} />
             ) : (
-              <button
-                className="absolute inset-0 m-auto bg-white rounded-[32px] w-[188px] h-[46px] text-[20px] text-[#222222] font-arcum font-normal"
-                onClick={() => setOpen(true)}
-              >
-                Snacka content
-              </button>
+              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
+              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+            </button>
             )}
           </div>
 
           <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative"
+            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
             style={{ backgroundImage: `url(${Film2})` }}
             onMouseOver={() => {
               setflag2(true);
@@ -67,17 +65,15 @@ function FilmProducts() {
             {flag2 === false ? (
               <img className="absolute inset-0 m-auto" src={Film2Logo} />
             ) : (
-              <button
-                className="absolute inset-0 m-auto bg-white rounded-[32px] w-[188px] h-[46px] text-[20px] text-[#222222] font-arcum font-normal"
-                onClick={() => setOpen(true)}
-              >
-                Snacka content
-              </button>
+              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
+              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+            </button>
             )}
           </div>
 
           <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative"
+            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
             style={{ backgroundImage: `url(${Film3})` }}
             onMouseOver={() => {
               setflag3(true);
@@ -89,18 +85,16 @@ function FilmProducts() {
             {flag3 === false ? (
               <img className="absolute inset-0 m-auto" src={Film3Logo} />
             ) : (
-              <button
-                className="absolute inset-0 m-auto bg-white rounded-[32px] w-[188px] h-[46px] text-[20px] text-[#222222] font-arcum font-normal"
-                onClick={() => setOpen(true)}
-              >
-                Snacka content
-              </button>
+              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
+              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+            </button>
             )}
           </div>
         </div>
         <div className="w-full h-[50%] grid grid-cols-3">
           <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative"
+            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
             style={{ backgroundImage: `url(${Film4})` }}
             onMouseOver={() => {
               setflag4(true);
@@ -112,17 +106,15 @@ function FilmProducts() {
             {flag4 === false ? (
               <img className="absolute inset-0 m-auto" src={Film4Logo} />
             ) : (
-              <button
-                className="absolute inset-0 m-auto bg-white rounded-[32px] w-[188px] h-[46px] text-[20px] text-[#222222] font-arcum font-normal"
-                onClick={() => setOpen(true)}
-              >
-                Snacka content
-              </button>
+              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
+              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+            </button>
             )}
           </div>
 
           <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative"
+            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
             style={{ backgroundImage: `url(${Film5})` }}
             onMouseOver={() => {
               setflag5(true);
@@ -134,17 +126,15 @@ function FilmProducts() {
             {flag5 === false ? (
               <img className="absolute inset-0 m-auto" src={Film5Logo} />
             ) : (
-              <button
-                className="absolute inset-0 m-auto bg-white rounded-[32px] w-[188px] h-[46px] text-[20px] text-[#222222] font-arcum font-normal"
-                onClick={() => setOpen(true)}
-              >
-                Snacka content
-              </button>
+              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
+              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+            </button>
             )}
           </div>
 
           <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative"
+            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
             style={{ backgroundImage: `url(${Film6})` }}
             onMouseOver={() => {
               setflag6(true);
@@ -156,12 +146,11 @@ function FilmProducts() {
             {flag6 === false ? (
               <img className="absolute inset-0 m-auto" src={Film6Logo} />
             ) : (
-              <button
-                className="absolute inset-0 m-auto bg-white rounded-[32px] w-[188px] h-[46px] text-[20px] text-[#222222] font-arcum font-normal"
-                onClick={() => setOpen(true)}
-              >
-                Snacka content
-              </button>
+              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
+              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+            </button>
+              
             )}
           </div>
         </div>
