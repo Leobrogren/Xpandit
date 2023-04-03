@@ -183,13 +183,15 @@ ul.slider {
 .swiper .swiper-button-prev{
 	top: -50px;
 	/* right: 0px; */
-	height: 30px;
+	height: 25px;
     overflow: hidden;
-	left: 90%;
+	left: 93%;
+	color: rgb(24, 24, 24);
 }
 
 .swiper .swiper-button-next{
 	top: -50px;
-	height: 30px;
+	height: 25px;
     overflow: hidden;
+	color: rgb(24, 24, 24);
 }

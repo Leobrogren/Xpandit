@@ -21,6 +21,7 @@ function ChosenProducts() {
       <div className="flex w-full h-full flex-col">
         <div className="flex w-full  grid flex-row grid-cols-3">
           <div className="w-full h-[90vh] overflow-hidden flex flex-col relative">
+            <a href="/reklam">
             <video
               loop
               muted
@@ -36,11 +37,13 @@ function ChosenProducts() {
             >
               <source src={video1} type="video/mp4" />
             </video>
+            </a>
             <p className="font-bold text-[50px] text-white absolute left-[3%] top-[88%]">
               REKLAMFILM
             </p>
           </div>
           <div className="w-full h-[90vh] overflow-hidden flex flex-col relative">
+          <a href="/eventfilm">
             <video
               loop
               muted
@@ -56,11 +59,13 @@ function ChosenProducts() {
             >
               <source src={video2} type="video/mp4" />
             </video>
+            </a>
             <p className="font-bold text-[50px] text-white absolute left-[3%] top-[88%]">
               EVENTFILM
             </p>
           </div>
           <div className="w-full h-[90vh] overflow-hidden flex flex-col relative">
+          <a href="/coporate">
             <video
               loop
               muted
@@ -76,6 +81,7 @@ function ChosenProducts() {
             >
               <source src={video3} type="video/mp4" />
             </video>
+            </a>
             <p className="font-bold text-[50px] text-white absolute left-[3%] top-[88%]">
               CORPORATE
             </p>

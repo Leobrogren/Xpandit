@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import Film1 from "./../../../../assets/images/reklam/Film1.png";
+import Film1 from "./../../../../assets/images/reklam/film1.jpg";
 import Film2 from "./../../../../assets/images/reklam/Film2.png";
 import Film3 from "./../../../../assets/images/reklam/Film3.png";
 import Film4 from "./../../../../assets/images/reklam/Film4.png";
@@ -27,30 +27,37 @@ function FilmProducts() {
   const [flag5, setflag5] = useState(false);
   const [flag6, setflag6] = useState(false);
   const [open, setOpen] = useState(false);
+  const [showButton, setShowButton] = useState(false);
+
+  
 
   return (
     <section className="w-full h-screen flex justify-center flex-col items-center ">
       <div className="w-full h-screen flex flex-col">
         <div className="flex w-full h-[50%] grid grid-cols-3">
-          <div
-            className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
-            style={{ backgroundImage: `url(${Film1})` }}
-            onMouseOver={() => {
-              setflag1(true);
-            }}
-            onMouseOut={() => {
-              setflag1(false);
-            }}
-          >
-            {flag1 === false ? (
-              <img className="absolute inset-0 m-auto" src={Film1Logo} />
-            ) : (
-              <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
-              <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span class="relative text-black group-hover:text-white">Starta projekt</span>
-            </button>
-            )}
-          </div>
+        <div
+        className="relative w-full h-full bg-cover bg-center bg-no-repeat flex justify-center items-center"
+        style={{ backgroundImage: `url(${Film1})` }}
+        onMouseOver={() => setShowButton(true)}
+        onMouseOut={() => setShowButton(false)}
+      >
+        <img className={`${!showButton ? "opacity-100" : "opacity-0"} absolute inset-0 w-80 m-auto transition-all duration-300 ease-out`} src={Film1Logo} />
+        <a className={`${!showButton ? "opacity-100" : "opacity-0"} absolute pt-44 text-white transition-all duration-300 ease-out`}>DEFA Solid</a>
+
+        <button
+          className={`${
+            showButton ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+          } transition-all duration-300 ease-out group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow`}
+          onClick={() => setOpen(true)}
+        >
+          <div className="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-300 ease-out group-hover:w-full"></div>
+          <span className="relative text-black group-hover:text-white">
+            Mer information
+          </span>
+        </button>
+      </div>
+
+
 
           <div
             className="cursor-pointer w-full h-[100%] bg-cover bg-center bg-no-repeat relative flex justify-center items-center"
@@ -67,7 +74,7 @@ function FilmProducts() {
             ) : (
               <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
               <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+              <span class="relative text-black group-hover:text-white">Mer information</span>
             </button>
             )}
           </div>
@@ -87,7 +94,7 @@ function FilmProducts() {
             ) : (
               <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
               <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+              <span class="relative text-black group-hover:text-white">Mer information</span>
             </button>
             )}
           </div>
@@ -108,7 +115,7 @@ function FilmProducts() {
             ) : (
               <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
               <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+              <span class="relative text-black group-hover:text-white">Mer information</span>
             </button>
             )}
           </div>
@@ -128,7 +135,7 @@ function FilmProducts() {
             ) : (
               <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
               <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+              <span class="relative text-black group-hover:text-white">Mer information</span>
             </button>
             )}
           </div>
@@ -148,7 +155,7 @@ function FilmProducts() {
             ) : (
               <button class="group relative h-12 w-48 overflow-hidden rounded-xl bg-[#f5f5f5] text-lg shadow" onClick={() => setOpen(true)}>
               <div class="absolute inset-0 w-3 bg-[#1a1a1a] transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-              <span class="relative text-black group-hover:text-white">Starta projekt</span>
+              <span class="relative text-black group-hover:text-white">Mer information</span>
             </button>
               
             )}
